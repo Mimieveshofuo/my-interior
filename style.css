@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap');
+body{
+ font-family:'Montserrat',sans-serif;
+ width: 100vw;
+ height: 100vh;
+ background-color: #181719;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.main{
+    display: flex; 
+    justify-content: space-between; 
+    padding-top: 30px;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo p {
+    border: 1px solid white;
+    color:  white;
+    font-family:'Crimson Pro',serif;
+    font-weight: 200;
+    font-size: 14px; 
+    text-transform: uppercase
+}
+.hamburger-menu{
+    display: none;
+}
+nav li{
+    display: inline;
+    padding-left: 30px;
+}
+nav li a{
+    color: white;
+    text-decoration: none;
+  
+    font-family: 'Montserrat',sans-serif;
+    font-size:14px;
+}
+nav a:hover{
+    padding-bottom: 5px;
+    border-bottom: 4px solid #ffffff;
+}
+.content{
+    display: flex;
+    padding-top: 100px;
+}
+
+.side-note{
+    width:50%;padding-right: 192px;
+}
+.side-image{
+    width: 70%;
+    position: relative;
+}
+.side-note h1{
+    color: white;
+    font-family: 'Lora',serif; 
+    font-weight: 500; 
+    font-size: 30px; 
+    line-height: 61px;
+}
+.side-note a{
+    color:white; 
+    text-decoration: none; 
+    font-size: 18px; 
+    font-weight: 700; 
+}
+.side-note p{
+    color: white; 
+    font-weight: normal; 
+    font-size: 23px ; 
+    line-height: 29px;
+}
+.card{
+    background-color: black;
+    position: absolute;
+    width: 50%;
+    top: 80%;
+    left: 33%;
+    padding: 30px 20px 14px 30px;
+}
+.inner-card{
+    display: flex;
+    margin-left: -20px;
+}
+.inner-card img{
+    border-radius: 100%;
+}
+.name{
+    padding-left: 20px;
+}
+.name p{
+    color: white; font-weight: 500; font-size: 14px;
+}
+.name p:nth-child(2){
+    color: #828282; 
+    font-size: 12px;
+    font-weight: 500; 
+    line-height: 15px;
+}
+.card h1{
+    color: white; 
+    font-family: 'Lora',serif; 
+    font-weight: bold; 
+    font-size: 24px;
+}
+footer{
+    padding-top: 200px;
+    text-align: center;
+}
+footer p{
+    color:#a9a9a9;
+    font-size: 12px;
+}
+
+@media screen and (min-width:1440px) {
+    .side-note{
+        padding-top: 30px;
+    }
+    .side-note h1{
+        font-size: 48px;
+    }
+    .side-note p{
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 768px) {
+.container{
+        width: 90%;
+    }
+ .content{
+     display: block;
+     padding-top: unset;
+ }
+ .main{
+     padding-top: unset;
+ }
+ .header{
+     width: 100%;
+     margin: 0 auto;
+ }
+ .side-note{
+     width: 100%;
+     padding-bottom: 100px;
+     padding-right: unset;
+ }
+ .side-note h1{
+     font-size: 36px;
+ }
+ .side-image{
+     width: 100%;
+ }
+ nav{
+     display: none;
+     width: 100vw;
+     height: 100vh;
+     position: fixed;
+     left:0;
+     z-index: 10;
+     background-color: black;
+ }
+ nav a::after{
+     display: none;
+
+ }
+ .close-menu{
+     height: 2px;
+     position:absolute;
+     top: 25px;
+     right: 14px;
+ }
+ .close-menu div{
+     width: 22px;
+     height: 2px;
+     background-color: white;
+     transform-origin:center ;
+ }
+ .cross-one{
+     transform: rotate(45deg);
+ }
+ .cross-two{
+     position: absolute;
+     top: 0;
+     transform: rotate(-45deg);
+ }
+
+ nav ul{
+     margin-top: 115px;
+ }
+ nav ul.open{
+     height: auto;
+ }
+ nav ul li{
+     float:left;
+     text-align:center;
+     width: 70%;
+     margin-bottom: 40px;
+ }
+ nav li a{
+     padding-left: 30px;
+ }
+ .hamburger-menu>img{
+     width: 40px;
+     display: block;
+ }
+ nav ul li a{
+     font-size: 20px;
+     padding-left: unset;
+ }
+ .hamburger-menu{
+     display: unset;
+     
+ }
+ .card h1{
+     font-size: 18px;
+ }
+ 
+}
